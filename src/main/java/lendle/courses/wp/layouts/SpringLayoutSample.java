@@ -5,6 +5,7 @@
  */
 package lendle.courses.wp.layouts;
 
+import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SpringLayout;
@@ -29,7 +30,9 @@ public class SpringLayoutSample {
         
         JLabel label=new JLabel("label");
         //layout the label to (5, 5)
-        
+        layout.putConstraint(BorderLayout.WEST, label, 5, SpringLayout.WEST, frame.getContentPane());
+        layout.putConstraint(BorderLayout.NORTH, label, 5, SpringLayout.NORTH, frame.getContentPane());
+        layout.putConstraint(BorderLayout.SOUTH, label, 5, SpringLayout.SOUTH, frame.getContentPane());
         ////////////////////////////
         
         frame.add(label);
