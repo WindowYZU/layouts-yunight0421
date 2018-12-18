@@ -32,7 +32,7 @@ public class SpringLayoutSample {
         //layout the label to (5, 5)
         layout.putConstraint(BorderLayout.WEST, label, 5, SpringLayout.WEST, frame.getContentPane());
         layout.putConstraint(BorderLayout.NORTH, label, 5, SpringLayout.NORTH, frame.getContentPane());
-        layout.putConstraint(BorderLayout.SOUTH, label, 5, SpringLayout.SOUTH, frame.getContentPane());
+        
         ////////////////////////////
         
         frame.add(label);
